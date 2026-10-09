@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goa Jepang Coffee Space · Majalengka</title>
+    <meta name="description" content="Goa Jepang Coffee Space, coffee space di kawasan situs bunker bersejarah di Kelurahan Tonjong, Majalengka." />
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        arang: { 900: "#151915", 800: "#1e241e", 700: "#2c342c" },
+                        hijau: { 400: "#86c493", 500: "#3f8f55", 600: "#2f7344", 700: "#245a35" },
+                        kertas: "#f6f5ef",
+                        kertas2: "#ebeee3"
+                    },
+                    fontFamily: {
+                        serif: ["Fraunces", "Georgia", "serif"],
+                        sans: ["Karla", "ui-sans-serif", "system-ui", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Karla:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-kertas text-stone-800 font-sans text-[17px] leading-relaxed">
+
+  <!-- ================= NAVBAR ================= -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-colors duration-300">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between px-5 h-16">
+          <a href="#beranda" class="text-white text-lg">
+              <span class="font-serif font-bold">Goa Jepang</span>
+              <span class="text-hijau-400 ml-1">Coffee Space</span>
+          </a>
+
+          <ul class="hidden md:flex gap-7 text-[15px] text-white">
+              <li><a href="#tentang" class="hover:text-hijau-400">Tentang</a></li>
+              <li><a href="#aktivitas" class="hover:text-hijau-400">Aktivitas</a></li>
+              <li><a href="#galeri" class="hover:text-hijau-400">Galeri</a></li>
+              <li><a href="#menu" class="hover:text-hijau-400">Menu</a></li>
+              <li><a href="#video" class="hover:text-hijau-400">Video</a></li>
+              <li><a href="#lokasi" class="hover:text-hijau-400">Lokasi</a></li>
+          </ul>
+
+          <button id="menuBtn" class="md:hidden text-white border border-white/50 px-3 py-1 text-sm rounded-md" aria-label="Buka menu navigasi">Menu</button>
+      </nav>
+
+      <ul id="mobileMenu" class="hidden md:hidden bg-arang-900 text-white text-[15px] px-5 pb-3">
+          <li><a href="#tentang" class="block py-2 border-t border-white/10">Tentang</a></li>
+          <li><a href="#aktivitas" class="block py-2 border-t border-white/10">Aktivitas</a></li>
+          <li><a href="#galeri" class="block py-2 border-t border-white/10">Galeri</a></li>
+          <li><a href="#menu" class="block py-2 border-t border-white/10">Menu</a></li>
+          <li><a href="#video" class="block py-2 border-t border-white/10">Video</a></li>
+          <li><a href="#lokasi" class="block py-2 border-t border-white/10">Lokasi</a></li>
+      </ul>
+  </header>
+
+  <!-- ================= BERANDA ================= -->
+  <section id="beranda" class="relative min-h-screen flex items-end text-white bg-stone-600">
+      <!-- FOTO: images/hero.jpg -->
+      <span class="absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-white/60">FOTO KOSONG<br />images/hero.jpg</span>
+      <div role="img" aria-label="Area Goa Jepang Coffee Space" class="absolute inset-0 bg-cover bg-center" style="background-image:url('images/coffeespace.jpeg')"></div>
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div class="relative max-w-6xl mx-auto w-full px-5 pb-20 md:pb-28">
+          <p class="text-hijau-400 mb-3">Kelurahan Tonjong, Kabupaten Majalengka</p>
+          <h1 class="font-serif text-4xl md:text-7xl font-bold leading-[1.05]">Goa Jepang <span class="bg-hijau-500 px-2 box-decoration-clone">Coffee Space</span></h1>
+          <p class="mt-5 max-w-xl text-white/85 md:text-xl">Menikmati kopi di tengah situs bersejarah Majalengka.</p>
+          <a href="#tentang" class="inline-block mt-8 bg-hijau-500 hover:bg-hijau-600 transition-colors px-7 py-3 rounded-md font-bold">Jelajahi</a>
+      </div>
+  </section>
+
+  <!-- ================= TENTANG GOA JEPANG ================= -->
+  <section id="tentang" class="py-20 px-5">
+      <div class="max-w-6xl mx-auto">
+        <div class="mt-10 grid md:grid-cols-12 gap-10 items-start">
+            <figure class="md:col-span-5 md:sticky md:top-24 ">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold">Tentang Goa Jepang</h2>
+                <br>
+                <div class="relative w-full h-80 md:h-[460px] rounded-lg overflow-hidden bg-stone-300 shadow-[8px_8px_0_#2f7344]">
+                    <span class="absolute inset-0 flex items-center justify-center p-4 text-center text-xs text-stone-600">FOTO KOSONG<br />images/bunker.jpeg</span>
+                    <div role="img" aria-label="Bunker Goa Jepang" class="absolute inset-0 bg-cover bg-center" style="background-image:url('images/bunker.jpeg')"></div>
+                </div>
+            </figure>
+
+            <div class="md:col-span-7 divide-y divide-stone-300">
+                <div class="pb-7">
+                    <h3 class="font-serif text-xl font-bold text-hijau-700">Sejarah Singkat</h3>
+                    <p class="mt-2 text-stone-700">
+                      Goa Jepang Majalengka merupakan bangunan bunker bersejarah yang berada di Kelurahan Tonjong, tepat di samping kompleks Kodim 0617/Majalengka.
+                      Sejumlah sumber sejarah lokal mengaitkan keberadaan bunker ini dengan masa pemerintahan kolonial Belanda dan aktivitas militer di Majalengka.
+                      Bangunan ini menjadi salah satu jejak perjalanan sejarah daerah, mulai dari masa penjajahan hingga perjuangan mempertahankan kemerdekaan.
+                    </p>
+                </div>
+
+                <div class="py-7">
+                    <h3 class="font-serif text-xl font-bold text-hijau-700">Asal Nama "Goa Jepang"</h3>
+                    <p class="mt-2 text-stone-700">
+                      Meski lebih dikenal sebagai Goa Jepang, bangunan ini sebenarnya merupakan bunker, yaitu bangunan pertahanan yang dirancang untuk kebutuhan militer. 
+                      Nama tersebut melekat dalam ingatan masyarakat karena keterkaitannya dengan masa pendudukan Jepang. 
+                      Sebutan Goa Jepang pun tetap digunakan hingga sekarang.
+                    </p>
+                </div>
+                <div class="py-7">
+                    <h3 class="font-serif text-xl font-bold text-hijau-700">Fungsi Situs</h3>
+                    <p class="mt-2 text-stone-700">
+                      Dinding kokoh, pintu besi, dan bentuk bangunannya menjadi bagian yang menarik untuk diamati saat mengunjungi situs ini. 
+                      Lebih dari sekadar bangunan lama, bunker ini mengingatkan pengunjung pada dinamika sejarah Majalengka pada masa kolonial dan pendudukan Jepang. 
+                      Kini, kawasan sekitarnya dikembangkan sebagai ruang rekreasi yang memadukan wisata sejarah, kegiatan edukatif, dan tempat bersantai.
+                    </p>
+                </div>
+                <div class="pt-7">
+                    <h3 class="font-serif text-xl font-bold text-hijau-700">Revitalisasi Kawasan</h3>
+                    <p class="mt-2 text-stone-700">
+                      Pada 6 Februari 2026, Goa Jepang Coffee Space resmi dibuka di kawasan Kodim 0617/Majalengka. 
+                      Pengembangan ini menjadi upaya menghidupkan kembali kawasan bersejarah agar dapat dinikmati masyarakat dalam suasana yang lebih nyaman. 
+                      Kehadiran coffee space memberikan pilihan bagi pengunjung untuk menikmati makanan dan minuman, bersantai, sekaligus mengenal salah satu situs bersejarah di Majalengka.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+
+    <!-- ================= WISATA & AKTIVITAS ================= -->
+  <section id="aktivitas" class="py-20 px-5 bg-kertas2">
+      <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+              <h2 class="font-serif text-3xl md:text-4xl font-bold">Wisata & Aktivitas</h2>
+              <p class="text-stone-600 mt-3">
+                  Menelusuri jejak sejarah, menikmati suasana, dan bersantai di Goa Jepang Coffee Space.
+              </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
+
+              <article class="lg:col-span-2 bg-white border border-stone-300 rounded-lg p-6">
+                  <p class="font-serif text-4xl font-bold text-hijau-500">01</p>
+                  <h3 class="font-serif text-xl font-bold mt-2">Mengamati Bangunan Bunker</h3>
+                  <p class="mt-2 text-[15px] text-stone-600 leading-relaxed">
+                      Amati bentuk bangunan, pintu besi, dan detail arsitektur bunker yang menjadi daya tarik utama kawasan ini. Pengunjung dapat menjelajahi bagian yang dibuka untuk umum dengan tetap mengikuti arahan petugas.
+                  </p>
+              </article>
+
+              <article class="lg:col-span-2 bg-white border border-stone-300 rounded-lg p-6">
+                  <p class="font-serif text-4xl font-bold text-hijau-500">02</p>
+                  <h3 class="font-serif text-xl font-bold mt-2">Mengenal Jejak Sejarah</h3>
+                  <p class="mt-2 text-[15px] text-stone-600 leading-relaxed">
+                      Kenali nilai sejarah bunker yang berkaitan dengan masa penjajahan dan pendudukan Jepang di Majalengka. Kunjungan ke situs ini dapat menjadi kesempatan untuk mengenal sejarah lokal secara lebih dekat.
+                  </p>
+              </article>
+
+              <article class="lg:col-span-2 bg-white border border-stone-300 rounded-lg p-6">
+                  <p class="font-serif text-4xl font-bold text-hijau-500">03</p>
+                  <h3 class="font-serif text-xl font-bold mt-2">Bersantai di Taman dan Gazebo</h3>
+                  <p class="mt-2 text-[15px] text-stone-600 leading-relaxed">
+                      Nikmati suasana ruang terbuka di sekitar kawasan bunker. Taman dan gazebo dapat menjadi tempat untuk beristirahat, berbincang bersama teman, atau menghabiskan waktu santai bersama keluarga.
+                  </p>
+              </article>
+
+              <article class="lg:col-span-3 bg-white border border-stone-300 rounded-lg p-6">
+                  <p class="font-serif text-4xl font-bold text-hijau-500">04</p>
+                  <h3 class="font-serif text-xl font-bold mt-2">Menikmati Kuliner</h3>
+                  <p class="mt-2 text-[15px] text-stone-600 leading-relaxed">
+                      Lengkapi kunjungan dengan menikmati kopi, teh, mi, dan aneka camilan yang tersedia di Goa Jepang Coffee Space. Pengunjung dapat bersantai sambil menikmati hidangan di area kafe. Pilihan menu dan harganya dapat dilihat pada bagian Menu.
+                  </p>
+              </article>
+
+              <article class="md:col-span-2 lg:col-span-3 bg-white border border-stone-300 rounded-lg p-6">
+                  <p class="font-serif text-4xl font-bold text-hijau-500">05</p>
+                  <h3 class="font-serif text-xl font-bold mt-2">Fotografi dan Dokumentasi</h3>
+                  <p class="mt-2 text-[15px] text-stone-600 leading-relaxed">
+                      Abadikan kunjungan dengan latar bangunan bunker, taman, atau area coffee space. Perpaduan bangunan bersejarah dan suasana kafe memberikan beragam sudut menarik untuk foto. Untuk penggunaan tripod atau pengambilan video, ikuti ketentuan pengelola setempat.
+                  </p>
+              </article>
+
+          </div>
+      </div>
+  </section>
+
+  <!-- ================= GALERI ================= -->
+  <section id="galeri" class="py-20 px-5 bg-hijau-700">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-hijau-400 font-semibold uppercase tracking-widest text-sm mb-2">Galeri</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Dokumentasi Kunjungan</h2>
+        <p class="text-white/70 mt-3">Pilih foto untuk melihat tampilan yang lebih besar.</p>
+      </div>
+
+      <div class="grid auto-rows-[clamp(6rem,28vw,9.5rem)] grid-cols-2 gap-3 md:auto-rows-[clamp(7rem,12vw,11rem)] md:grid-cols-4 md:gap-4">
+
+        <!-- 1 · Papan nama -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300" data-src="images/papannama.jpeg" data-caption="Area luar · Papan nama di bagian depan kawasan" aria-label="Perbesar foto: Papan nama di bagian depan kawasan">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG<br />images/papannama.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/papannama.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Area luar</span>Papan nama di bagian depan kawasan</span>
+          </div>
+        </button>
+
+        <!-- 2 · Parkiran -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300" data-src="images/parkiran.jpeg" data-caption="Area luar · Area parkir pengunjung" aria-label="Perbesar foto: Area parkir pengunjung">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG<br />images/parkiran.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/parkiran.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Area luar</span>Area parkir pengunjung</span>
+          </div>
+        </button>
+
+        <!-- 3 · Bangunan cafe (BESAR 2x2, landscape) -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300 col-span-2 row-span-2" data-src="images/cafe.jpeg" data-caption="Coffee space · Bangunan Goa Jepang Coffee Space" aria-label="Perbesar foto: Bangunan Goa Jepang Coffee Space">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG (besar, landscape)<br />images/cafe.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/cafe.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Coffee space</span>Bangunan Goa Jepang Coffee Space</span>
+          </div>
+        </button>
+
+        <!-- 4 · Taman -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300" data-src="images/taman.jpeg" data-caption="Gazebo &amp; taman · Area taman kawasan" aria-label="Perbesar foto: Area taman kawasan">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG<br />images/taman.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/taman.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Gazebo &amp; taman</span>Area taman kawasan</span>
+          </div>
+        </button>
+
+        <!-- 5 · Gazebo -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300" data-src="images/gazebo.jpeg" data-caption="Gazebo &amp; taman · Gazebo di area taman" aria-label="Perbesar foto: Gazebo di area taman">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG<br />images/gazebo.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/gazebo.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Gazebo &amp; taman</span>Gazebo di area taman</span>
+          </div>
+        </button>
+
+        <!-- 6 · Tempat duduk -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300" data-src="images/tempatduduk.jpeg" data-caption="Coffee space · Area tempat duduk pengunjung" aria-label="Perbesar foto: Area tempat duduk pengunjung">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG<br />images/tempatduduk.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/tempatduduk.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Coffee space</span>Area tempat duduk pengunjung</span>
+          </div>
+        </button>
+
+        <!-- 7 · Makanan -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300" data-src="images/makanan.jpeg" data-caption="Makanan · Sajian makanan dan minuman" aria-label="Perbesar foto: Sajian makanan dan minuman">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG<br />images/makanan.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/makanan.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Makanan</span>Sajian makanan dan minuman</span>
+          </div>
+        </button>
+
+        <!-- 8 · Pintu bunker -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300" data-src="images/pintubunker.jpeg" data-caption="Bunker · Pintu masuk bunker" aria-label="Perbesar foto: Pintu masuk bunker">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG<br />images/pintubunker.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/pintubunker.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Bunker</span>Pintu masuk bunker</span>
+          </div>
+        </button>
+
+        <!-- 9 · Lorong bunker -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300" data-src="images/lorong.jpeg" data-caption="Bunker · Lorong di dalam bunker" aria-label="Perbesar foto: Lorong di dalam bunker">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG<br />images/lorong.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/lorong.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Bunker</span>Lorong di dalam bunker</span>
+          </div>
+        </button>
+
+        <!-- 10 · Papan informasi sejarah (BESAR 2x2, landscape) -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300 col-span-2 row-span-2" data-src="images/sejarah.jpeg" data-caption="Sejarah · Papan informasi sejarah Goa Jepang" aria-label="Perbesar foto: Papan informasi sejarah Goa Jepang">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG<br />images/sejarah.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/sejarah.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Sejarah</span>Papan informasi sejarah Goa Jepang</span>
+          </div>
+        </button>
+
+        <!-- 11 · Pengunjung di meja bersama makanan (foto Anda, POTRET) -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300 row-span-2 md:col-start-1 md:row-start-4" data-src="images/gwdanmakan.jpeg" data-caption="Pengunjung · Menikmati hidangan di coffee space" aria-label="Perbesar foto: Pengunjung menikmati hidangan di coffee space">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG (foto Anda, potret)<br />images/gwdanmakan.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/gwdanmakan.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Pengunjung</span>Menikmati hidangan di coffee space</span>
+          </div>
+        </button>
+
+        <!-- 12 · Pengunjung di depan bunker (foto Anda, POTRET) -->
+        <button class="group relative h-full w-full overflow-hidden rounded-xl bg-stone-300 row-span-2 md:col-start-4 md:row-start-4" data-src="images/depanbunker.jpeg" data-caption="Pengunjung · Pengunjung di depan bunker" aria-label="Perbesar foto: Pengunjung di depan bunker">
+          <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG (foto Anda, potret)<br />images/depanbunker.jpeg</span>
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110" style="background-image:url('images/depanbunker.jpeg')"></div>
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+            <span class="text-left text-xs text-white md:text-sm"><span class="block text-[11px] text-hijau-400">Pengunjung</span>Pengunjung di depan bunker</span>
+          </div>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox (foto diperbesar). Klik di mana saja atau tekan Esc untuk menutup -->
+  <div id="lightbox" class="hidden fixed inset-0 z-[60] cursor-pointer flex-col items-center justify-center gap-4 bg-black/90 p-4">
+    <span class="absolute top-5 right-6 text-4xl leading-none text-white">&times;</span>
+    <div id="lbImg" class="h-[70vh] w-full max-w-4xl rounded-lg bg-contain bg-center bg-no-repeat"></div>
+    <p id="lbCaption" class="text-sm text-stone-300"></p>
+  </div>
+
+  <!-- ================= MENU ================= -->
+    <section id="menu" class="py-20 px-5">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-center">Menu</h2>
+
+            <h3 class="font-serif text-2xl text-hijau-600 mt-10 text-center">Menu Favorit</h3>
+            <p class="text-stone-600 text-center">Tiga menu pilihan yang kami rekomendasikan.</p>
+
+            <div class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 max-w-5xl mx-auto">
+
+              <article class="bg-white border border-stone-300 rounded-lg overflow-hidden">
+                <div class="relative aspect-[3/4] bg-stone-300">
+                  <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG (potret 3:4)<br />images/lemontea.jpeg</span>
+                  <div role="img" aria-label="Lemon Tea" class="absolute inset-0 bg-cover bg-center" style="background-image:url('images/lemontea.jpeg')"></div>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-baseline justify-between gap-3">
+                    <h4 class="font-serif text-lg font-bold">Lemon Tea</h4>
+                    <span class="text-hijau-600 font-bold whitespace-nowrap">Rp16.000</span>
+                  </div>
+                  <p class="mt-2 text-[15px] text-stone-600">Perpaduan teh dan lemon dengan rasa segar dan sedikit asam, cocok untuk menemani waktu bersantai.</p>
+                </div>
+              </article>
+
+              <article class="bg-white border border-stone-300 rounded-lg overflow-hidden">
+                <div class="relative aspect-[3/4] bg-stone-300">
+                  <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG (potret 3:4)<br />images/miebangladesh.jpeg</span>
+                  <div role="img" aria-label="Mie Bangladesh" class="absolute inset-0 bg-cover bg-center" style="background-image:url('images/miebangladesh.jpeg')"></div>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-baseline justify-between gap-3">
+                    <h4 class="font-serif text-lg font-bold">Mie Bangladesh</h4>
+                    <span class="text-hijau-600 font-bold whitespace-nowrap">Rp17.000</span>
+                  </div>
+                  <p class="mt-2 text-[15px] text-stone-600">Mi berbumbu rempah dengan cita rasa gurih, disajikan hangat dan cukup mengenyangkan.</p>
+                </div>
+              </article>
+
+              <article class="col-span-2 md:col-span-1 justify-self-center w-1/2 md:w-full bg-white border border-stone-300 rounded-lg overflow-hidden">
+                <div class="relative aspect-[3/4] bg-stone-300">
+                  <span class="absolute inset-0 flex items-center justify-center p-2 text-center text-xs text-stone-600">FOTO KOSONG (potret 3:4)<br />images/rujakcireng.jpeg</span>
+                  <div role="img" aria-label="Rujak Cireng" class="absolute inset-0 bg-cover bg-center" style="background-image:url('images/rujakcireng.jpeg')"></div>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-baseline justify-between gap-3">
+                    <h4 class="font-serif text-lg font-bold">Rujak Cireng</h4>
+                    <span class="text-hijau-600 font-bold whitespace-nowrap">Rp15.000</span>
+                  </div>
+                  <p class="mt-2 text-[15px] text-stone-600">Cireng goreng yang kenyal di dalam dan renyah di luar, disajikan dengan bumbu rujak bercita rasa manis, asam, dan pedas.</p>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- Menu lainnya: daftar lengkap, tanpa foto -->
+            <div class="mt-20 border-t border-stone-300 pt-12">
+                <h3 class="font-serif text-2xl text-hijau-600 text-center">Menu Lainnya</h3>
+                <p class="text-stone-600 text-center">Daftar menu lengkap.</p>
+
+                <div class="mt-8 grid md:grid-cols-2 gap-x-16 gap-y-10">
+
+                <div>
+                    <h4 class="font-serif italic text-xl text-hijau-700 border-b-2 border-hijau-500 pb-1 mb-3">Coffee</h4>
+                    <ul class="space-y-2">
+                      <li class="flex items-baseline gap-2"><span>Americano H/I</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>15.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Kopi Susu</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>18.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Latte H/I</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>18.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Kopi Lemon</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>19.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Sweet Bonbon</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>16.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Morning Osaka</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>19.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Butterscoth Latte</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>19.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Kopi Tubruk</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>14.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Filter Kopi</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>8.000</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif italic text-xl text-hijau-700 border-b-2 border-hijau-500 pb-1 mb-3">Non Coffee</h4>
+                    <ul class="space-y-2">
+                      <li class="flex items-baseline gap-2"><span>Matcha Latte H/I</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>20.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Coklat H/I</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>17.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Black Pink</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>20.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Susu H/I</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>12.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Strawberry Creamy</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>17.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Susu Mangga</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>17.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Mango Bland Soda</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>18.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Teh Manis H/I</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>10.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Teh Tarik H/I</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>16.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Lemmon Tea H/I</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>16.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Strawberry Tea</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>16.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Mango Tea</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>16.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Mango Yakult</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>17.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Strawberry Yakult</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>17.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Air Mineral</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>5.000</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif italic text-xl text-hijau-700 border-b-2 border-hijau-500 pb-1 mb-3">Makanan Berat</h4>
+                    <ul class="space-y-2">
+                      <li class="flex items-baseline gap-2"><span>Rice Bowl Chicken Teriyaki</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>23.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Nasi Katsu Sambal Matah/BBQ/Ori</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>22.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Nasi Taichan Sambal Matah</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>20.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Nasi Goreng Kampung Spesial</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>21.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Mie Bangladesh</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>17.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Mie Spycy Chicken Katsu</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>20.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Spaghetti Carbonara</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>20.000</span></li>
+                      <li class="flex items-baseline gap-2"><span>Kwetiaw Goreng</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>17.000</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif italic text-xl text-hijau-700 border-b-2 border-hijau-500 pb-1 mb-3">Camilan</h4>
+                    <ul class="space-y-2">
+                    <li class="flex items-baseline gap-2"><span>Rujak Cireng</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>15.000</span></li>
+                    <li class="flex items-baseline gap-2"><span>Frech Fries</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>13.000</span></li>
+                    <li class="flex items-baseline gap-2"><span>Mix Platter</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>13.000</span></li>
+                    <li class="flex items-baseline gap-2"><span>Otak Otak</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>12.000</span></li>
+                    <li class="flex items-baseline gap-2"><span>Roti Bakar Keju/Coklat</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>12.000</span></li>
+                    <li class="flex items-baseline gap-2"><span>Pisang Bakar Keju/Coklat</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>12.000</span></li>
+                    <li class="flex items-baseline gap-2"><span>Pisang Goreng</span><span class="flex-1 border-b border-dotted border-stone-400 -translate-y-1"></span><span>12.000</span></li>
+                    </ul>
+                </div>
+
+                </div>
+
+                <p class="mt-10 text-sm text-stone-500 text-center">*Harga dapat berubah sewaktu-waktu.</p>
+            </div>
+        </div>
+    </section>
+
+  <!-- ================= VIDEO ================= -->
+  <section id="video" class="py-20 px-5 bg-arang-900 text-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-8">
+        <h2 class="font-serif text-3xl md:text-4xl font-bold">Video Perjalanan</h2>
+        <p class="text-white/70 mt-2">Dokumentasi singkat dari pintu masuk hingga hidangan di coffee space.</p>
+      </div>
+
+      <div class="relative w-full overflow-hidden rounded-lg border border-white/15 bg-arang-800" style="padding-top:56.25%">
+
+
+
+        <div class="absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-white/60">
+          VIDEO KOSONG
+        </div>
+
+        <!-- OPSI 1: YouTube. -->
+        <iframe class="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/W0ggRzJYKd8"
+                title="Video perjalanan ke Goa Jepang Coffee Space"
+                loading="lazy" allowfullscreen></iframe>
+       
+
+        <!-- OPSI 2: file MP4 di folder video/
+        <video class="absolute inset-0 h-full w-full" controls preload="metadata" playsinline>
+          <source src="video/perjalanan.mp4" type="video/mp4" />
+        </video>
+        -->
+
+      </div>
+
+      <ol class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-[15px]">
+        <li class="border-t-2 border-hijau-500 pt-2"><span class="text-hijau-400 font-bold">1</span> Pintu masuk</li>
+        <li class="border-t-2 border-hijau-500 pt-2"><span class="text-hijau-400 font-bold">2</span> Area bunker</li>
+        <li class="border-t-2 border-hijau-500 pt-2"><span class="text-hijau-400 font-bold">3</span> Coffee space</li>
+        <li class="border-t-2 border-hijau-500 pt-2"><span class="text-hijau-400 font-bold">4</span> Hidangan</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= LOKASI ================= -->
+  <section id="lokasi" class="py-20 px-5 bg-kertas2">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold">Lokasi & Akses</h2>
+        <dl class="mt-8 space-y-6">
+          <div>
+            <dt class="font-bold text-hijau-700">Alamat</dt>
+            <dd class="mt-1 leading-relaxed">
+              Jl. Raya KH Abdul Halim, Kelurahan Tonjong, Kecamatan Majalengka, Kabupaten Majalengka, Jawa Barat. 
+              Bersebelahan dengan Markas Kodim 0617/Majalengka.
+            </dd>
+          </div>
+
+          <div>
+            <dt class="font-bold text-hijau-700">Informasi Akses</dt>
+            <dd>
+              <ul class="mt-2 space-y-2 list-disc pl-5 marker:text-hijau-500">
+                <li>
+                  <strong>Jam operasional:</strong>
+                  Selasa-Minggu, pukul 08.00-22.00 WIB.
+                </li>
+                <li>
+                  <strong>Tiket masuk:</strong>
+                  gratis. Pengunjung cukup memesan menu di coffee space.
+                </li>
+                <li>Dapat dijangkau dengan sepeda motor maupun mobil melalui Jl. Raya KH Abdul Halim.</li>
+                <li>Area parkir tersedia di sekitar lokasi.</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <!-- PETA -->
+        <div class="rounded-lg overflow-hidden border border-stone-300 h-96 min-h-[360px]">
+          <iframe
+            class="w-full h-full"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Peta lokasi Goa Jepang Coffee Space Majalengka"
+            src="https://www.google.com/maps?q=Goa+Jepang+Coffee+Space+Majalengka&amp;output=embed">
+          </iframe>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Goa+Jepang+Coffee+Space+Majalengka" target="_blank" rel="noopener noreferrer"
+          class="w-full text-center bg-arang-900 hover:bg-hijau-600 text-white px-6 py-3 rounded-md font-bold transition-colors">
+          Buka di Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- footer -->
+  <footer class="bg-arang-900 text-white/70 text-sm">
+    <div class="max-w-6xl mx-auto px-5 py-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div>
+          <a href="#beranda"
+             class="inline-block font-serif font-bold text-lg">
+            <span class="text-white">Goa Jepang</span>
+            <span class="text-hijau-400">Coffee Space</span>
+          </a>
+          <p class="mt-3 leading-relaxed">
+            Tempat menikmati kopi dan suasana santai
+            di kawasan Tonjong, Majalengka.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-white text-base">Navigasi</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a href="#beranda" class="hover:text-hijau-400 transition-colors">Beranda</a></li>
+            <li><a href="#tentang" class="hover:text-hijau-400 transition-colors">Tentang</a></li>
+            <li><a href="#galeri" class="hover:text-hijau-400 transition-colors">Galeri</a></li>
+            <li><a href="#menu" class="hover:text-hijau-400 transition-colors">Menu</a></li>
+            <li><a href="#video" class="hover:text-hijau-400 transition-colors">Video</a></li>
+            <li><a href="#lokasi" class="hover:text-hijau-400 transition-colors">Lokasi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-white text-base">Tentang Pembuat</h3>
+          <p class="mt-3 text-white font-medium">
+            Gian Pasha Novansyah (2514101050)
+          </p>
+          <p class="mt-1 leading-relaxed">
+            Mahasiswa Program Studi Informatika
+            <br>
+            Universitas Majalengka
+          </p>
+          <p class="mt-3 text-xs text-white/50">
+            Dibuat untuk memenuhi tugas mata kuliah <br> <b>Pengembangan Aplikasi Berbasis Web.</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-white/15 mt-8 pt-5
+                  flex flex-col sm:flex-row justify-between gap-2">
+        <p>
+          © 2026 Goa Jepang Coffee Space.
+        </p>
+        <p>
+          Website profil wisata · Pengembangan Aplikasi Berbasis Web
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
