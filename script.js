@@ -49,7 +49,7 @@ function tutupLightbox() {
   lightbox.classList.remove("flex");
 }
 
-// klik di mana aja buat nutup
+// klik di mana saja untuk menutup
 lightbox.addEventListener("click", tutupLightbox);
 
 // atau klik tombol esc
